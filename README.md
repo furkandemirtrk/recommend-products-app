@@ -4,10 +4,11 @@
 
 1. [Installation](#installation)
     * [Cloning repo and installation of dependencies](#cloning-repo-and-installation-of-dependencies)
-2. [Endpoints](#endpoints)
+2. [Architecture](#Architecture)
+3. [Endpoints](#endpoints)
     * [Recommend](#recommend)
-        - [/api/recommend/](#/api/recommend/{userId})
-   *  [Product View](#Product View)
+        - [/api/recommend/](#recommend)
+   *  [ProductView](#ProductView)
        - [/api/product/](#/api/product/{userId})
        - [/api/product/](#/api/product/)
 
@@ -19,6 +20,34 @@ git clone https://github.com/furkandemirtrk/recommend-products-app.git
 # or gh repo clone furkandemirtrk/recommend-products-app
 ```
 
+## Architecture
+
+![alt text](https://github.com/furkandemirtrk/recommend-products-app/blob/main/arch.png?raw=true)
+
+## Technologies I use
+
+### MongoDb
+```
+ StreamReaderApp database 
+```
+
+### Kafka
+```
+Port : 9092
+```
+
+### PostgreSQL
+```
+ Port : 5432
+ Username: postgres
+ Password: 123456
+```
+
+### Spring Batch
+#### Two jobs is scheduled in product-view-etl-process
+```
+@Scheduled(fixedDelay = 200000)
+```
 
 ## Endpoints
 
@@ -68,7 +97,7 @@ git clone https://github.com/furkandemirtrk/recommend-products-app.git
 ```
 
 
-### Product View
+### ProductView
 ##### GET
 #### /api/product/{userId}
 
@@ -102,5 +131,4 @@ git clone https://github.com/furkandemirtrk/recommend-products-app.git
 ```
 true or false
 ```
-
 
