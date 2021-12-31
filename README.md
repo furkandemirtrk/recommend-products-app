@@ -28,17 +28,18 @@ git clone https://github.com/furkandemirtrk/recommend-products-app.git
 
 ### MongoDb
 ```
- StreamReaderApp database 
+ Database: streamReadereApp 
 ```
 
 ### Kafka
 ```
-Port : 9092
+Port: 9092
+Topic: SendProductView 
 ```
 
 ### PostgreSQL
 ```
- Port : 5432
+ Port: 5432
  Username: postgres
  Password: 123456
 ```
