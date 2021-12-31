@@ -18,7 +18,7 @@ public class ProductTransformScheduleJob {
     @Scheduled(fixedDelay = 200000)
     public void runProductTransformScheduleJob() throws EtlProcessException {
         log.info("runProductTransformScheduleJob JOB starting : ".concat(LocalDateTime.now().toString()));
-//        productTransformProcess.run();
+        productTransformProcess.run();
         log.info("runProductTransformScheduleJob JOB ended : ".concat(LocalDateTime.now().toString()));
     }
 }

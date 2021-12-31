@@ -5,7 +5,6 @@ import com.demirturk.productviewetlprocess.entity.OrderItem;
 import com.demirturk.productviewetlprocess.entity.Product;
 import com.demirturk.productviewetlprocess.entity.ProductView;
 import com.demirturk.productviewetlprocess.repository.jpa.OrderItemRepository;
-import com.demirturk.productviewetlprocess.repository.jpa.ProductRepository;
 import com.demirturk.productviewetlprocess.repository.mongo.ProductMongoRepository;
 import com.demirturk.productviewetlprocess.repository.mongo.ProductViewRepository;
 import lombok.AllArgsConstructor;
